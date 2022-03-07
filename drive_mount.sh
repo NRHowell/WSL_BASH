@@ -9,18 +9,18 @@
 #!/usr/bin/env bash 
 
 if [ $1 =   ];then
-	echo choose drive letter J,P,N,etc.....
-	echo type --help for details
+	echo 'choose drive letter J,P,N,etc.....'
+	echo 'type --help for details'
 
 elif [ $1 = '--help' ];then
 	echo '^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
-	echo Script to mount network drives when using the windows linux subsytem
+	echo 'Script to mount network drives when using the windows linux subsytem'
 	echo 'Will be mounting ANSTO network drives ( i.e J and P and N into)  the folders /mnt/$'
-	echo How to use:
+	echo 'How to use:'
 	echo 'drive_mount.sh DRIVE (i.e J,P,N etc...)'
-	echo if mnt/$ already exists drive will be mounted in exisiting folder
+	echo 'if mnt/$ already exists drive will be mounted in exisiting folder'
 	echo 
-	echo Nick
+	echo 'Nick'
 	echo '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
 else	
 	sudo mkdir /mnt/$1
